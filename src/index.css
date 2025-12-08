@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --- GLOBAL STYLES --- */
+/* Browser ki default margin/padding khatam taake layout control mein rahe */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+  Custom class for vertical text (Used in Sidebar).
+  text-orientation: mixed ensures English text is rotated 90deg, not stacked letter by letter.
+*/
+.writing-mode-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
