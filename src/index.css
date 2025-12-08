@@ -19,3 +19,6 @@
   text-orientation: mixed;
 }
 
+html {
+  scroll-behavior: smooth;
+}
