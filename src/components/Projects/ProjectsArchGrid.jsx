@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 
 // Placeholder images imports (Replace these with your actual images)
-import project1Img from '../../assets/HomePage/profile.webp';
-import project2Img from '../../assets/HomePage/profile.webp';
+import project1Img from '../../assets/Projects/1.webp';
+import project2Img from '../../assets/Projects/2.webp';
 
 // PROJECTS DATA
 const projectsData = [
