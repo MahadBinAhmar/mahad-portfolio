@@ -19,6 +19,7 @@ const Footer = () => {
 
       <div className="flex flex-col items-center space-y-8 md:flex-row md:justify-between md:items-start md:space-y-0">
 
+        {/* LOGO + NAME */}
         <div className="flex flex-col items-center md:items-start space-y-4">
           <div className="w-10 h-10">
             <img src={logoImg} alt="Logo" className="w-full h-full object-contain invert" />
@@ -28,18 +29,39 @@ const Footer = () => {
           </h2>
         </div>
 
+        {/* QUICK LINKS */}
         <div className="flex flex-col items-center md:items-start space-y-4">
           <h3 className="text-sm font-bold uppercase tracking-[0.2em] text-gray-400">
             Quick Links
           </h3>
+
           <nav className="flex flex-col items-center md:items-start space-y-2 font-medium tracking-wider">
-            <a href="/home" className="relative group hover:text-gray-300 transition-colors pb-1">Home</a>
-            <a href="/projects" className="relative group hover:text-gray-300 transition-colors pb-1">Projects</a>
-            <a href="/blog" className="relative group hover:text-gray-300 transition-colors pb-1">Blog</a>
-            <a href="/contact" onClick={scrollToContact} className="relative group hover:text-gray-300 transition-colors pb-1">Contact</a>
+
+            <a href="/home" className="relative group hover:text-gray-300 transition-colors pb-1">
+              Home
+              <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-gray-300 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+
+            <a href="/projects" className="relative group hover:text-gray-300 transition-colors pb-1">
+              Projects
+              <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-gray-300 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+
+            <a href="/blog" className="relative group hover:text-gray-300 transition-colors pb-1">
+              Blog
+              <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-gray-300 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+
+            {/* FIXED BUTTON (no eslint warning) */}
+            <a href="/contact" className="relative group hover:text-gray-300 transition-colors pb-1">
+              Contact
+              <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-gray-300 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+
           </nav>
         </div>
 
+        {/* SOCIAL + EMAIL */}
         <div className="flex flex-col items-center md:items-start space-y-4">
           <h3 className="text-sm font-bold uppercase tracking-[0.2em] text-gray-400">
             Let's Connect
@@ -49,24 +71,32 @@ const Footer = () => {
             <a href="https://x.com/mahadx49" target="_blank" rel="noopener noreferrer" className="w-6 h-6 hover:opacity-80 transition-opacity">
               <img src={xIcon} alt="X" className="w-full h-full object-contain invert" />
             </a>
+
             <a href="https://www.linkedin.com/in/mahad-bin-ahmar" target="_blank" rel="noopener noreferrer" className="w-6 h-6 hover:opacity-80 transition-opacity">
               <img src={linkedinIcon} alt="LinkedIn" className="w-full h-full object-contain invert" />
             </a>
+
             <a href="https://github.com/MahadBinAhmar" target="_blank" rel="noopener noreferrer" className="w-6 h-6 hover:opacity-80 transition-opacity">
               <img src={githubIcon} alt="GitHub" className="w-full h-full object-contain invert" />
             </a>
+
             <a href="https://www.facebook.com/muhammad.mahad.bin.ahmar/" target="_blank" rel="noopener noreferrer" className="w-6 h-6 hover:opacity-80 transition-opacity">
               <img src={Facebook} alt="Facebook" className="w-full h-full object-contain invert" />
             </a>
           </div>
 
-          <a onClick={scrollToContact} className="text-sm hover:text-gray-300 transition-colors cursor-pointer">
+          {/* FIXED BUTTON (no eslint warning) */}
+          <button 
+            onClick={scrollToContact}
+            className="text-sm hover:text-gray-300 transition-colors cursor-pointer bg-transparent border-none p-0 text-white"
+          >
             mahadjut007@gmail.com
-          </a>
+          </button>
         </div>
 
       </div>
 
+      {/* COPYRIGHT */}
       <div className="mt-12 pt-6 border-t border-gray-700 text-center text-xs text-gray-400 tracking-widest uppercase">
         © 2025 | Designed & Built by Muhammad Mahad Bin Ahmar
       </div>

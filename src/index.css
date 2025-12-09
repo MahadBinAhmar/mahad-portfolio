@@ -18,7 +18,3 @@
   writing-mode: vertical-rl;
   text-orientation: mixed;
 }
-
-html {
-  scroll-behavior: smooth;
-}
